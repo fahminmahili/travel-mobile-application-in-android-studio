@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fege Travel Mobile App</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="not_a_member_register">Not a member? Register here.</string>
+    <string name="already_member_login">Already have an account? Login here.</string>
+    <string name="back_to_main">Back to Main</string>
+</resources>

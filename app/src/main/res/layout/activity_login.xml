@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background1"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fege Travel App"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/appCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by Mahili"
+        android:layout_below="@id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="23sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="32dp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:animateLayoutChanges="true">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_hint"
+            android:importantForAutofill="yes"
+            android:inputType="textEmailAddress"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:importantForAutofill="yes"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_button"
+            android:background="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/register_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/purple_700"
+            android:onClick="navigateToRegister"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/not_a_member_register"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
